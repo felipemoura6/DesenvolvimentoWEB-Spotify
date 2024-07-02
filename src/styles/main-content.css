@@ -1,19 +1,19 @@
 /* HEADER */
 
 .main-container {
-    max-width: 80vw;
-    height: 100vh;
-    margin-left: 320px;
-    margin-right: 56px;
+    max-width: 80rem;
+    height: 100rem;
+    margin-left: 20rem;
+    margin-right: 3.5rem;
 }
 
 .header__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
-    margin: 10px;
-    border-radius: 16px;
+    padding: 0.625rem;
+    margin: 1.25rem;
+    border-radius: 0.5rem;
     background-color: #121212;
 }
 
@@ -31,13 +31,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     background: var(--bg-icon);
     background-color: var(--bg-arrow-color);
     border-radius: 50%;
     border: none;
     cursor: pointer;
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background: #222222;
 }
 
 .header__login {
@@ -48,23 +52,32 @@
 .header__search {
     display: flex;
     align-items: center;
-    width: 364px;
-    height: 48px;
+    width: 22.75rem;
+    height: 3rem;
+    margin-left: 0.5rem;
     background-color: #242424;
-    border-radius: 500px;
-    border: 1px solid transparent;
+    border-radius: 31.25rem;
+    border: 0.0625rem solid transparent;
+}
+
+.header__search:hover{
+    border: 0.0625rem solid #fff;
 }
 
 .header__search img {
-    width: 16px;
-    height: 16px;
-    margin-left: 10px;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 1.25rem;
+}
+
+.header__search img:hover{
+    cursor: pointer;
 }
 
 .header__search input {
     background: transparent;
     border: none;
-    padding: 0 100px 0 12px;
+    padding: 0 6.25rem 0 0.75rem;
     color: #fff;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -74,29 +87,258 @@
 
 .header__login .subscribe {
     color: #a7a7a7;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     background-color: transparent;
-    margin-right: 32px;
+    margin-right: 2rem;
+    margin-left: 25rem;
     border: none;
     cursor: pointer;
 }
 
 .header__login .subscribe:hover {
     color: #d3d3d3;
+    transform: scale(1.04);
 }
 
 .header__login .login {
-    width: 100px;
-    height: 48px;
+    width: 6.25rem;
+    height: 3rem;
     color: #000;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     border: none;
-    border-radius: 40px;
+    border-radius: 2.5rem;
     cursor: pointer;
 }
 
 .header__login .login:hover {
     background-color: #fff;
+    transform: scale(1.04);
 }
+
+.playlist-container {
+    height: 72vh;
+    padding-top: 1rem;
+    margin: 1.25rem;
+    border-radius: 0.625rem;
+    background-color: #121212;
+}
+
+.playlist-container .playlist {
+    margin: 3rem;
+}
+
+.playlist #greeting {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.playlist .session {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.card__scroll-container {
+    max-height: 52vh;
+    margin: 3rem;
+    overflow-y: auto;
+}
+
+.offer__scroll-container::-webkit-scrollbar {
+    width: 0.0625rem;
+  }
+
+.offer__list-item {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.cards {
+    position: relative;
+    width: 13.75rem;
+    height: 12.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+
+.cards span {
+    padding: 1rem;
+    position: absolute;
+    color: var(--text-base-light);
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+.offer__list-item img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    width: 107px;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.hidden {
+    display: none;
+  }
+
+.card1 {
+    background-color: rgb(0, 100, 80);
+  }
+  .card2 {
+    background-color: rgb(132, 0, 231);
+  }
+  .card3 {
+    background: rgb(30, 50, 100);
+  }
+  .card4 {
+    background: rgb(140, 25, 50);
+  }
+  .card5 {
+    background: rgb(232, 17, 91);
+  }
+  .card6 {
+    background: rgb(83, 122, 161);
+  }
+  .card7 {
+    background: rgb(142, 102, 172);
+  }
+  .card8 {
+    background: rgb(20, 138, 8);
+  }
+  .card9 {
+    background: rgb(30, 50, 100);
+  }
+  .card10 {
+    background: rgb(233, 20, 41);
+  }
+  .card11 {
+    background: rgb(80, 55, 80);
+  }
+  .card12 {
+    background: rgb(216, 64, 0);
+  }
+  .card13 {
+    background: rgb(186, 93, 7);
+  }
+  .card14 {
+    background: rgb(0, 30, 80);
+  }
+  .card15 {
+    background: rgb(60, 30, 80);
+  }
+
+  .artist {
+    --column-count: 5;
+    --grid-gap: 1.25rem;
+    --min-container-width: 23.25rem;
+  }
+  
+  
+  .grid-container {
+    grid-gap: var(--grid-gap);
+    display: grid;
+    grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+    min-width: var(--min-container-width);
+  }
+  
+  .artist-card {
+    background: #181818;
+    border-radius: 0.5rem;
+    -ms-flex: 1;
+    flex: 1;
+    isolation: isolate;
+    padding: 1rem;
+    position: relative;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .artist-card:hover {
+    background-color: #252525;
+  }
+  
+  .card-img {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .artist-img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .card-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-height: 3.875rem;
+  }
+  
+  .card-text a {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .artist-name {
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-block-end: 0.5rem;
+  }
+  
+  .artist-categorie {
+    color: #6a6a6a;
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  
+  .play {
+    position: relative;
+  }
+  
+  .play .fa-play {
+    position: absolute;
+    right: 0.625rem;
+    top: 7.5rem;
+    padding: 1.125rem;
+    background-color: #1db954;
+    border-radius: 100%;
+    font-size: 0.875rem;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  
+  .artist-card:hover .play .fa-play {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+  
+  .play .fa-play:hover {
+    padding: 1.125rem;
+    cursor: pointer;
+  }
+  
+  #result-artist {
+    padding: 1.125rem 2.5rem;
+  }
+  /* FIM CARD ARTISTA */
